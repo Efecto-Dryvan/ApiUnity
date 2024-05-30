@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "9e5e8500-9673-4005-90b0-d295d79370ad",
+		"name": "Api_local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30573165"
+	},
+	"item": [
+		{
+			"name": "object_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8DKwF5txFvDw2GSS\",\r\n    \"nombre\": \"Espada\",\r\n    \"tipo\": \"Arma\",\r\n    \"sprite\": \"url_sprite\",\r\n    \"descripcion\": \"Una espada que no corta mucho\",\r\n    \"stats\": [\r\n        { \"nombre\": \"Ataque\", \"valor\": 50 },\r\n        { \"nombre\": \"Defensa\", \"valor\": 10 },\r\n        { \"nombre\": \"Velocidad\", \"valor\": 20 }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/object/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"object",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"c06ea8c607fbfe927c09428d8fde704c\",\r\n    \"segundos\": 1713114346\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/game/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"game",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8DKwF5txFvDw2GSS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/object/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"object",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuario_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8DKwF5txFvDw2GSS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/object/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"object",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"c06ea8c607fbfe927c09428d8fde704c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/game/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"game",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_version",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/version",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/object/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"object",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8DKwF5txFvDw2GSS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/game/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"game",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_get_by_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/object/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"object",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_get_by_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"c06ea8c607fbfe927c09428d8fde704c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/game/list/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"game",
+						"list",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

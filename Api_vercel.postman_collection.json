@@ -1,0 +1,409 @@
+{
+	"info": {
+		"_postman_id": "c910d66e-d266-43ef-a64f-7cc4b7563cfd",
+		"name": "Api_vercel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30573165"
+	},
+	"item": [
+		{
+			"name": "object_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8DKwF5txFvDw2GSS\",\r\n    \"nombre\": \"Espada\",\r\n    \"tipo\": \"Arma\",\r\n    \"sprite\": \"url_sprite\",\r\n    \"descripcion\": \"Una espada que no corta mucho\",\r\n    \"stats\": [\r\n        { \"nombre\": \"Ataque\", \"valor\": 50 },\r\n        { \"nombre\": \"Defensa\", \"valor\": 10 },\r\n        { \"nombre\": \"Velocidad\", \"valor\": 20 }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/object/create",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"object",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/user/create",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"c06ea8c607fbfe927c09428d8fde704c\",\r\n    \"segundos\": 1713114346\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/game/create",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"game",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8DKwF5txFvDw2GSS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/object/delete?id=1",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"object",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "usuario_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8DKwF5txFvDw2GSS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/user/delete?id=1",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"user",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"a3cb1df1e38521ae03135d1a76d81486\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/game/delete?id=1",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"game",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_version",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/version",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/object/list",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"object",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"8DKwF5txFvDw2GSS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/game/list",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"game",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "object_get_by_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/object/view?id=1",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"object",
+						"view"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "game_get_by_user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicGFzcyI6IiQyYiQxNSR6cVkyUTRlT29HekZwWmtISno5SFMuQlNmWGMvSE0yRS95VFdhMWF3Rm1UTWdOMmJFNzJVdSIsImlhdCI6MTcwODQ0NjE4OCwiZXhwIjoxNzA5MzEwMTg4fQ.LKlhBjpFBZtD1Np3-jeLxNB3a-2V5wSu9JMv0USMjWY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"c06ea8c607fbfe927c09428d8fde704c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-firebase-inky.vercel.app/game/list/user",
+					"protocol": "https",
+					"host": [
+						"api-firebase-inky",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"game",
+						"list",
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
