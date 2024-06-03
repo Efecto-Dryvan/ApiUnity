@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/object/create",
+					"raw": "https://api-firebase-psi.vercel.app/object/create",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -51,7 +51,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/user/create",
+					"raw": "https://api-firebase-psi.vercel.app/user/create",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -81,7 +81,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/game/create",
+					"raw": "https://api-firebase-psi.vercel.app/game/create",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -111,7 +111,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/object/delete?id=1",
+					"raw": "https://api-firebase-psi.vercel.app/object/delete?id=1",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -147,7 +147,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/user/delete?id=1",
+					"raw": "https://api-firebase-psi.vercel.app/user/delete?id=1",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -183,7 +183,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/game/delete?id=1",
+					"raw": "https://api-firebase-psi.vercel.app/game/delete?id=1",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -228,7 +228,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/version",
+					"raw": "https://api-firebase-psi.vercel.app/version",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -266,7 +266,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/object/list",
+					"raw": "https://api-firebase-psi.vercel.app/object/list",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -305,7 +305,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/game/list",
+					"raw": "https://api-firebase-psi.vercel.app/game/list",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -344,7 +344,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/object/view?id=1",
+					"raw": "https://api-firebase-psi.vercel.app/object/view?id=1",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",
@@ -389,7 +389,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://api-firebase-inky.vercel.app/game/list/user",
+					"raw": "https://api-firebase-psi.vercel.app/game/list/user",
 					"protocol": "https",
 					"host": [
 						"api-firebase-inky",

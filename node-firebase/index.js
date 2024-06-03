@@ -13,12 +13,12 @@ const version = "v1.0.0";
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Rutas
 app.use('/user', userRoute);
 app.use('/game', gameRoute);
 app.use('/object', objectRoute);
 
-// Route for version
+// ruta de version
 app.get('/version', (req, res) => {
   res.status(200).json({ version });
 });
